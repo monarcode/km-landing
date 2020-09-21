@@ -11,34 +11,34 @@
 </head>
 
 <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-blue text-white">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img class="logo" src="./assets/img/kolo-white.svg">KoloMoni</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              <!-- <img src="/assets/img/menu.svg" alt="ham" /> -->
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-links">
+              <div class="navbar-nav">
+                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">FAQs</a>
+                <a class="nav-link" href="#">Get In Touch</a>
+                <a class="nav-link cta" href="#">Sign In</a>
+              </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
     <main id="fullpage">
         <div class="section">
-            <!-- navbar -->
-            <nav class="navbar navbar-expand-lg bg-blue text-white">
-                <div class="container">
-                    <a class="navbar-brand" href="#"><img class="logo" src="./assets/img/kolo-white.svg">KoloMoni</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                      <!-- <img src="/assets/img/menu.svg" alt="ham" /> -->
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbar-links">
-                      <div class="navbar-nav">
-                        <a class="nav-link active" href="#">Home</a>
-                        <a class="nav-link" href="#">About Us</a>
-                        <a class="nav-link" href="#">Features</a>
-                        <a class="nav-link" href="#">FAQs</a>
-                        <a class="nav-link" href="#">Get In Touch</a>
-                        <a class="nav-link cta" href="#">Sign In</a>
-                      </div>
-                    </div>
-                </div>
-            </nav>
-            <!-- navbar end -->
-    
             <!-- header -->
             <header id="hero">
                 <div class="container">
-                    <div class="row inner">
+                    <div class="row inner d-flex flex-column-reverse flex-lg-row">
                         <div class="col-12 col-lg-6 header-text">
                             <h2>NOT JUST AN <br><span>APP</span></h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
@@ -48,13 +48,16 @@
                             <img src="./assets/img/header-img-1.png" class="img-fluid" alt="h-1">
                         </div>
                     </div>
+                    <div class="row">
+                        <img class="mouse" src="./assets/img/mouse.svg" alt="mouse">
+                    </div>
                 </div>
             </header>
             <!-- header end -->
         </div>
 
         <section id="about-us" class="section">
-            
+
         </section>
     </main>
 
@@ -65,7 +68,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js" integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw==" crossorigin="anonymous"></script>
     <script>
         new fullpage('#fullpage', {
-            autoScrolling: true
+            autoScrolling: true,
+            paddingTop: '10vh'
         })
     </script>
 </body>
