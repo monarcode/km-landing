@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w==" crossorigin="anonymous" />
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        .section {
+            display: grid;
+            place-items: center;
+        }
+
+        .s1 {
+            background-color: red;
+        }
+        .s2 {
+            background-color: green;
+        }
+        .s3 {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <main id="fullpage">
+        <div class="section s1">
+            <h1>Section 1</h1>
+        </div>
+        <div class="section s2">
+            <h1>Section 2</h1>
+        </div>
+        <div class="section s3">
+            <h1>Section 3</h1>
+        </div>
+    </main>
+
+    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js" integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw==" crossorigin="anonymous"></script>
+    <script>
+        new fullpage('#fullpage', {
+            autoScrolling: true
+        })
+    </script>
+</body>
+</html>
