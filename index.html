@@ -5,43 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css"
+        integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" href="./assets/style/main.css">
     <title>KoloMoni NG</title>
 </head>
 
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-blue text-white">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img class="logo" src="./assets/img/kolo-white.svg">KoloMoni</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-              <!-- <img src="/assets/img/menu.svg" alt="ham" /> -->
-            </button>
-            <div class="collapse navbar-collapse" id="navbar-links">
-              <div class="navbar-nav">
-                <a class="nav-link active" href="#">Home</a>
-                <a class="nav-link" href="#">About Us</a>
-                <a class="nav-link" href="#">Features</a>
-                <a class="nav-link" href="#">FAQs</a>
-                <a class="nav-link" href="#">Get In Touch</a>
-                <a class="nav-link cta" href="#">Sign In</a>
-              </div>
-            </div>
-        </div>
-    </nav>
-    <!-- navbar end -->
+    <main>
+        <div>
+            <!-- navbar -->
+            <nav class="navbar navbar-expand-lg bg-blue text-white">
+                <div class="container">
+                    <a class="navbar-brand" href="#"><img class="logo" src="./assets/img/kolo-white.svg">KoloMoni</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
+                        aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        <!-- <img src="/assets/img/menu.svg" alt="ham" /> -->
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar-links">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" href="#">Home</a>
+                            <a class="nav-link" href="#">About Us</a>
+                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#">FAQs</a>
+                            <a class="nav-link" href="#">Get In Touch</a>
+                            <a class="nav-link cta" href="#">Sign In</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- navbar end -->
 
-    <main id="fullpage">
-        <div class="section">
             <!-- header -->
-            <header id="hero">
+            <header id="hero" class="container-fluid d-flex align-items-center snap-start">
                 <div class="container">
                     <div class="row inner d-flex flex-column-reverse flex-lg-row">
                         <div class="col-12 col-lg-6 header-text">
                             <h2>NOT JUST AN <br><span>APP</span></h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus
+                                venenatis</p>
                             <a href="#" class="cta cta-border">Download Now</a>
                         </div>
                         <div class="col-12 col-lg-6 header-img">
@@ -56,22 +60,134 @@
             <!-- header end -->
         </div>
 
-        <section id="about-us" class="section">
-
+        <!-- about us -->
+        <section id="about-us" class="container-fluid d-flex align-items-center snap-start">
+            <div class="container h-100">
+                <div class="row h-100 justify-content-center align-items-center">
+                    <div class="col-12 col-md-6 left">
+                        <img src="./assets/img/abt-us-illust.svg" alt="abt-us">
+                    </div>
+                    <div class="col-12 col-md-6 right">
+                        <h2>ABOUT <span>US</span></h2>
+                        <p>Remember that savings box or piggy bank you had as a child? We made it into an app! This app is designed to help users achieve their goals through SAVINGS (not every time borrowborrow, sometimes your own money). At KoloMoni,we're a team of young people who understand how difficult it is to save money especially with today's economic pressures. This is why we have created a Mobile and Web app to ensure for fast, convenient and seamless savings.</p>
+                        <div class="store-links">
+                            <span class="apple">
+                                <img src="./assets/img/apple.svg" alt="">
+                                <div class="text">
+                                    <p>Download on the</p>
+                                    <h3>App Store</h3>
+                                </div>
+                            </span>
+                            <span class="google">
+                                <img src="./assets/img/playStore.svg" alt="">
+                                <div class="text">
+                                    <p>GET IT ON</p>
+                                    <h3>Google Play</h3>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+        <!-- about us end -->
+
+        <!-- why us -->
+        <section id="why-us" class="container-fluid d-flex align-items-center p-5 snap-start">
+            <div class="container">
+                <div class="row justify-content-center mb-2">
+                    <h2 class="text-center">WHY <span>US?</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4 card">
+                        <img src="./assets/img/WEB-SHEILD.svg" alt="">
+                        <h3>WEB SECURITY</h3>
+                        <p>KoloMoni is built with the highest level of security standards. All data are encrypted before transmission using a Secured Layer for establishing an encrypted connection </p>
+                        <a href="#" class="cta">Learn more</a>
+                    </div>
+                    <div class="col-12 col-md-4 card">
+                        <img src="./assets/img/card-sheild.svg" alt="">
+                        <h3>CARD SECURITY</h3>
+                        <p>We work with a PCI-DSS compliant payment processor for the security of your data, therefore all card details entered on corpreneur are protected, safe and secured.</p>
+                        <a href="#" class="cta">Learn more</a>
+                    </div>
+                    <div class="col-12 col-md-4 card">
+                        <img src="./assets/img/piggy-sheild.svg" alt="">
+                        <h3>FUNDS SECURITY</h3>
+                        <p>All funds are trusted with a public Trustee, duly registered with the Security and Exchange Commission. They monitor and ensure that all funds are securely invested.</p>
+                        <a href="#" class="cta">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- why us? -->
+
+        <!-- how it works -->
+        <section id="how-it-works" class="container-fluid d-flex align-items-center snap-start">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6 p-5 left">
+                        <img class="img-fluid" src="./assets/img/banner.svg" alt="banner">
+                    </div>
+                    <div class="col-12 col-md-6 p-5 right">
+                        <div class="row mt-5 mb-5">
+                            <h2>HOW IT <span>WORKS</span></h2>
+                        </div>
+                        <div class="row list">
+                            <div class="list-item d-flex gap mt-3">
+                                <div class="li-img"><img class="img-fluid" src="./assets/img/reg-acc.svg" alt="" loading="lazy"></div>
+                                <div class="li-desc">
+                                    <h3 class="font-weight-bold">REGISTER ACCOUNT</h3>
+                                    <p>Download the KoloMoni from Google Play Store , Apple Store or alternatively use our Web app to register a free KoloMoni account.</p>
+                                </div>
+                            </div>
+                            <div class="list-item d-flex gap mt-3">
+                                <div class="li-img"><img class="img-fluid" src="./assets/img/activate-acc.svg" alt=""></div>
+                                <div class="li-desc">
+                                    <h3 class="font-weight-bold">ACIVATE ACCOUNT</h3>
+                                    <p>Download the KoloMoni from Google Play Store , Apple Store or alternatively use our Web app to register a free KoloMoni account.</p>
+                                </div>
+                            </div>
+                            <div class="list-item d-flex gap mt-3">
+                                <div class="li-img"><img class="img-fluid" src="./assets/img/create-plan.svg" alt=""></div>
+                                <div class="li-desc">
+                                    <h3 class="font-weight-bold">CREATE PLAN</h3>
+                                    <p>Download the KoloMoni from Google Play Store , Apple Store or alternatively use our Web app to register a free KoloMoni account.</p>
+                                </div>
+                            </div>
+                            <div class="list-item d-flex gap mt-3">
+                                <div class="li-img"><img class="img-fluid" src="./assets/img/start-saving.svg" alt=""></div>
+                                <div class="li-desc">
+                                    <h3 class="font-weight-bold">START SAVING</h3>
+                                    <p>Download the KoloMoni from Google Play Store , Apple Store or alternatively use our Web app to register a free KoloMoni account.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- how it works end -->
+
+        <!-- what we offer -->
+            <section id="what-we-offer" class="container-fluid snap-start">
+                <div class="container">
+                    <div class="row justify-content-center"><h2>WHAT WE <span>OFFER</span></h2></div>
+                    <div class="row">
+                        
+                    </div>
+                </div>
+            </section>
+        <!-- what we offer end -->
     </main>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js" integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw==" crossorigin="anonymous"></script>
-    <script>
-        new fullpage('#fullpage', {
-            autoScrolling: true,
-            paddingTop: '10vh'
-        })
-    </script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"
+        integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw=="
+        crossorigin="anonymous"></script> -->
 </body>
 
 </html>
