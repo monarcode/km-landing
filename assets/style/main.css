@@ -10,19 +10,12 @@
 
 html {
   font-size: 62.5%;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-  scroll-padding: 10vh;
-  scroll-behavior: smooth;
 }
 
 body {
   font-size: 1.5rem;
   font-family: 'Raleway', sans-serif;
   background-color: #FAFAF9;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-  scroll-padding: 10vh;
 }
 
 .bg-blue {
