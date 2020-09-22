@@ -172,8 +172,6 @@ body {
 #hero .header-text p {
   font-size: 1.8rem;
   color: #383838;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
 }
 
 #hero .header-text .cta {
@@ -389,10 +387,13 @@ body {
 }
 
 #why-us .card .cta {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
   color: #FF7A00;
   text-decoration: none;
   display: inline;
-  padding: 1rem;
+  padding: 1rem 2rem;
   border-radius: 15px 15px 0 15px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -401,7 +402,7 @@ body {
 #why-us .card .cta:hover {
   background-color: #FF7A00;
   color: #FAFAF9;
-  padding: 1rem;
+  padding: 1rem 2rem;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }

@@ -175,8 +175,8 @@ body {
         p {
             font-size: 1.8rem;
             color: $dark;
-            margin-top: 2rem;
-            margin-bottom: 4rem;
+            // margin-top: 2rem;
+            // margin-bottom: 4rem;
         }
 
         .cta {
@@ -368,17 +368,18 @@ body {
         }
 
         .cta {
+            align-self: end;
             color: $primary;
             text-decoration: none;
             display: inline;
-            padding: 1rem;
+            padding: 1rem 2rem;
             border-radius: 15px 15px 0 15px;
             transition: all 0.2s ease-in-out;
 
             &:hover {
                 background-color: $primary;
                 color: $white;
-                padding: 1rem;
+                padding: 1rem 2rem;
                 transition: all 0.2s ease-in-out;
             }
         }
@@ -476,8 +477,6 @@ body {
 #footer {
     min-height: calc(100% + 10vh);
     background: radial-gradient(66.15% 66.15% at 50% 33.85%, #052BB3 0%, #001E89 100%);
-
-    
 }
 
 @media screen and (max-width: 500px) {
