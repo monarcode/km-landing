@@ -34,6 +34,10 @@ body {
   color: #FF7A00;
 }
 
+.text-black {
+  color: #383838;
+}
+
 .cta-border {
   border-radius: 20px 20px 20px 0px;
 }
@@ -49,10 +53,6 @@ body {
 
 .top {
   scroll-snap-align: start;
-}
-
-.gap {
-  gap: 10px;
 }
 
 .navbar {
@@ -246,7 +246,7 @@ body {
 }
 
 #about-us .right p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin: 2rem 0;
 }
 
@@ -254,7 +254,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
 }
 
 #about-us .right .store-links .apple {
@@ -271,6 +270,7 @@ body {
   color: #f5f5f5;
   border-radius: 10px;
   height: 100%;
+  margin: 0 20rem;
 }
 
 #about-us .right .store-links .apple p {
@@ -317,6 +317,15 @@ body {
   display: block;
 }
 
+@supports (gap: 20px) {
+  #about-us .right .store-links {
+    gap: 20px;
+  }
+  #about-us .right .store-links .apple, #about-us .right .store-links .google {
+    margin: 0 0;
+  }
+}
+
 #why-us {
   min-height: 90vh;
   background: radial-gradient(50% 50% at 50% 50%, #052BB3 0%, #001E89 100%);
@@ -342,6 +351,12 @@ body {
   margin-top: 2rem;
   padding: 2rem;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
@@ -359,6 +374,7 @@ body {
 
 #why-us .card img {
   margin: 2rem 0;
+  width: 40px;
 }
 
 #why-us .card h3 {
@@ -413,6 +429,76 @@ body {
 
 #how-it-works .right p {
   font-size: 1.4rem;
+}
+
+#what-we-offer {
+  min-height: 90vh;
+  background-color: #FFF9F3;
+}
+
+#what-we-offer h2 {
+  font-size: 5rem;
+}
+
+#what-we-offer .card {
+  background-color: rgba(255, 123, 0, 0.089);
+  border: none;
+  border-radius: 20px 20px 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 100%;
+  max-width: 350px;
+  margin: 2rem 0;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+#what-we-offer .card:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+#what-we-offer .card img {
+  width: 30px;
+}
+
+#what-we-offer .card .cta {
+  background-color: transparent;
+  border: 1px solid #FF7A00;
+  color: #FF7A00;
+  display: block;
+  width: 50%;
+  padding: 1rem 2rem;
+  text-align: center;
+  margin-left: auto;
+  border-radius: 20px 20px 0 20px;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+#what-we-offer .card .cta:hover {
+  background-color: #FF7A00;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+#what-we-offer .card .cta:hover > a {
+  color: #f5f5f5;
+}
+
+#what-we-offer .card .cta a {
+  color: #FF7A00;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 500px) {

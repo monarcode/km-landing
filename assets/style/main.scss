@@ -47,6 +47,10 @@ body {
     color: $primary;
 }
 
+.text-black {
+    color: $dark;
+}
+
 .cta-border {
     border-radius: 20px 20px 20px 0px;
 }
@@ -61,10 +65,6 @@ body {
 
 .top {
     scroll-snap-align: start;
-}
-
-.gap {
-    gap: 10px;
 }
 
 // navbar
@@ -241,14 +241,12 @@ body {
             }
         }
         p {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             margin: 2rem 0;
         }
 
         .store-links {
             display: flex;
-            gap: 20px;
-
 
             .apple {
                 background-color: #111;
@@ -260,6 +258,7 @@ body {
                 color: $light;
                 border-radius: 10px;
                 height: 100%;
+                margin: 0 20rem;
 
                 p {
                     font-size: 0.8rem;
@@ -303,6 +302,16 @@ body {
                 }
             }
         }
+
+        @supports (gap: 20px){
+            .store-links {
+                gap: 20px;
+
+                .apple, .google {
+                    margin: 0 0;
+                }
+            }
+        }
     }
 }
 
@@ -330,6 +339,8 @@ body {
         margin-top: 2rem;
         padding: 2rem;
         height: 100%;
+        display: flex;
+        align-items: center;
         transition: all 0.4s ease-in-out;
 
         &:hover {
@@ -342,6 +353,7 @@ body {
 
         img {
             margin: 2rem 0;
+            width: 40px;
         }
 
         h3 {
@@ -399,6 +411,64 @@ body {
 
         p {
             font-size: 1.4rem;
+        }
+    }
+}
+
+#what-we-offer {
+    min-height: 90vh;
+    background-color: $milk;
+
+    h2 {
+        font-size: 5rem;
+    }
+
+    .card {
+        background-color: rgba(255, 123, 0, 0.089);
+        border: none;
+        border-radius: 20px 20px 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+        max-width: 350px;
+        margin: 2rem 0;
+        transition: 0.3s all ease-in-out;
+
+        &:hover {
+            transform: translateY(-10px);
+            transition: 0.3s all ease-in-out;
+        }
+
+        img {
+            width: 30px;
+        }
+
+        .cta {
+            background-color: transparent;
+            border: 1px solid $primary;
+            color: $primary;
+            display: block;
+            width: 50%;
+            padding: 1rem 2rem;
+            text-align: center;
+            margin-left: auto;
+            border-radius: 20px 20px 0 20px;
+            transition: 0.3s all ease-in-out;
+
+            &:hover {
+                background-color: $primary;
+                transition: 0.3s all ease-in-out;
+            }
+
+            &:hover > a {
+                color: $light;
+            }
+
+            a {
+                color: $primary;
+                text-decoration: none;
+            }
         }
     }
 }
