@@ -454,7 +454,7 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  height: 100%;
+  height: auto;
   max-width: 350px;
   margin: 2rem 0;
   -webkit-transition: 0.3s all ease-in-out;
@@ -499,6 +499,11 @@ body {
 #what-we-offer .card .cta a {
   color: #FF7A00;
   text-decoration: none;
+}
+
+#footer {
+  min-height: calc(100% + 10vh);
+  background: radial-gradient(66.15% 66.15% at 50% 33.85%, #052BB3 0%, #001E89 100%);
 }
 
 @media screen and (max-width: 500px) {

@@ -430,7 +430,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        height: 100%;
+        height: auto;
         max-width: 350px;
         margin: 2rem 0;
         transition: 0.3s all ease-in-out;
@@ -471,6 +471,13 @@ body {
             }
         }
     }
+}
+
+#footer {
+    min-height: calc(100% + 10vh);
+    background: radial-gradient(66.15% 66.15% at 50% 33.85%, #052BB3 0%, #001E89 100%);
+
+    
 }
 
 @media screen and (max-width: 500px) {
