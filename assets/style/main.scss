@@ -31,6 +31,18 @@ body {
     // scroll-padding: 10vh;
 }
 
+.overflow-visible {
+    overflow: visible;
+}
+
+.floater {
+    animation: float 2s infinite alternate;
+}
+
+.arrow {
+    animation: arrow 2s infinite alternate ease-in-out;
+}
+
 .bg-blue {
     background-color: $secondary;
 }
@@ -211,6 +223,33 @@ body {
         // background-color: red;
         margin: 2rem 3rem;
         max-width: 500px;
+        // max-height: 100%;
+        position: relative !important;
+        overflow: visible;
+
+        bg {
+            position: absolute;
+            top: 5px;
+            left: 0;
+            z-index: -1;
+        }
+
+        phone {
+            position: absolute;
+            top: 0;
+            z-index: 5;
+        }
+
+        svg {
+           max-width: 100%;
+
+           rect#phone-img {
+            //    transform: translateY(-50px);
+               animation: float 2s infinite ease-in alternate;
+               transform-origin: bottom;
+               transform-box: fill-box;
+           }
+        }
     }
 
     .mouse {
@@ -328,6 +367,11 @@ body {
 #why-us {
     min-height: 90vh;
     background: radial-gradient(50% 50% at 50% 50%, #052BB3 0%, #001E89 100%);
+    transform: skewY(-3deg);
+
+    .un-skew {
+        transform: skewY(3deg);
+    }
 
     h2 {
         font-size: 5rem;
@@ -506,5 +550,30 @@ body {
         .header-text {
             text-align: center;
         }
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+        transform-origin: bottom;
+    }
+    50% {
+        transform: translateY(-10px);
+        transform-origin: bottom;
+    }
+    100% {
+        transform: translateY(0);
+        transform-origin: bottom;
+    }
+}
+
+@keyframes arrow {
+    0% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
     }
 }
