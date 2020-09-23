@@ -13,52 +13,51 @@
 </head>
 
 <body>
-    <main>
-        <div>
-            <!-- navbar -->
-            <nav class="navbar navbar-expand-lg bg-blue text-white">
-                <div class="container">
-                    <a class="navbar-brand" href="#"><img class="logo" src="./assets/img/kolo-white.svg">KoloMoni</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
-                        aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        <!-- <img src="/assets/img/menu.svg" alt="ham" /> -->
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbar-links">
-                        <div class="navbar-nav">
-                            <a class="nav-link active" href="#">Home</a>
-                            <a class="nav-link" href="#">About Us</a>
-                            <a class="nav-link" href="#">Features</a>
-                            <a class="nav-link" href="#">FAQs</a>
-                            <a class="nav-link" href="#">Get In Touch</a>
-                            <a class="nav-link cta" href="#">Sign In</a>
-                        </div>
+    <main data-spy="scroll" data-target="#nav" data-offset="0">
+        <!-- navbar -->
+        <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-blue text-white">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img class="logo" src="./assets/img/kolo-white.svg">KoloMoni</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
+                    aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <!-- <img src="/assets/img/menu.svg" alt="ham" /> -->
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-links">
+                    <div class="navbar-nav mb-2 mb-lg-0">
+                        <a class="nav-link active" href="#hero">Home</a>
+                        <a class="nav-link" href="#about-us">About Us</a>
+                        <a class="nav-link" href="#what-we-offer">Features</a>
+                        <a class="nav-link" href="#">FAQs</a>
+                        <a class="nav-link" href="#">Get In Touch</a>
+                        <a class="nav-link cta" href="#">Sign In</a>
                     </div>
                 </div>
-            </nav>
-            <!-- navbar end -->
+            </div>
+        </nav>
+        <!-- navbar end -->
 
-            <!-- header -->
-            <header id="hero" class="container-fluid d-flex align-items-center snap-start">
-                <div class="container">
-                    <div class="row inner d-flex flex-column-reverse flex-lg-row">
-                        <div class="col-12 col-lg-6 header-text">
-                            <h2>NOT JUST AN <br><span>APP</span></h2>
-                            <p class="mt-5 mb-5 mt-lg-3 mb-lg-3">Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit ut aliquam, purus sit amet luctus
-                                venenatis</p>
-                            <a href="#" class="cta cta-border">Download Now</a>
-                        </div>
-                        <div class="col-12 col-lg-6 header-img">
-                            <img src="./assets/img/header-img-1.png" class="img-fluid" alt="h-1">
-                        </div>
+        <!-- header -->
+        <header id="hero" class="container-fluid d-flex align-items-center snap-start">
+            <div class="container">
+                <div class="row inner d-flex flex-column-reverse flex-lg-row">
+                    <div class="col-12 col-md-6 header-text text-center text-lg-left">
+                        <h2>NOT JUST AN <br><span>APP</span></h2>
+                        <p class="mt-5 mb-5 mt-lg-3 mb-lg-3">Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit
+                            ut aliquam, purus sit amet luctus
+                            venenatis</p>
+                        <a href="#" class="cta cta-border">Download Now</a>
                     </div>
-                    <div class="row">
-                        <img class="mouse d-none d-lg-block" src="./assets/img/mouse.svg" alt="mouse">
+                    <div class="col-12 col-md-5 header-img">
+                        <img src="./assets/img/header-img-1.png" class="img-fluid" alt="h-1">
                     </div>
                 </div>
-            </header>
-            <!-- header end -->
-        </div>
+                <div class="row d-flex justify-content-center">
+                    <img class="mouse d-none d-lg-block" src="./assets/img/mouse.svg" alt="mouse">
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
 
         <!-- about us -->
         <section id="about-us" class="container-fluid p-5 d-flex align-items-center snap-start">
@@ -69,9 +68,15 @@
                     </div>
                     <div class="col-12 col-md-6 right">
                         <h2 class="text-center text-lg-left mt-3 mt-md-0">ABOUT <span>US</span></h2>
-                        <p class="text-center text-lg-left">Remember that savings box or piggy bank you had as a child? We made it into an app! This app is designed to help users achieve their goals through SAVINGS (not every time borrowborrow, sometimes your own money). At KoloMoni,we're a team of young people who understand how difficult it is to save money especially with today's economic pressures. This is why we have created a Mobile and Web app to ensure for fast, convenient and seamless savings.</p>
-                        <div class="store-links flex-column flex-md-row align-items-center justify-content-center justify-content-lg-start">
-                            <span class="apple mr-3 mr-lg-0">
+                        <p class="text-center text-lg-left">Remember that savings box or piggy bank you had as a child?
+                            We made it into an app! This app is designed to help users achieve their goals through
+                            SAVINGS (not every time borrowborrow, sometimes your own money). At KoloMoni,we're a team of
+                            young people who understand how difficult it is to save money especially with today's
+                            economic pressures. This is why we have created a Mobile and Web app to ensure for fast,
+                            convenient and seamless savings.</p>
+                        <div
+                            class="store-links flex-column flex-md-row align-items-center justify-content-center justify-content-lg-start">
+                            <span class="apple mr-3">
                                 <img src="./assets/img/apple.svg" alt="">
                                 <div class="text">
                                     <p>Download on the</p>
@@ -102,20 +107,23 @@
                     <div class="col-12 col-md-4 card">
                         <img src="./assets/img/WEB-SHEILD.svg" alt="">
                         <h3>WEB SECURITY</h3>
-                        <p>KoloMoni is built with the highest level of security standards. All data are encrypted before transmission using a Secured Layer for establishing an encrypted connection </p>
-                        <a href="#" class="cta">Learn more</a>
+                        <p>KoloMoni is built with the highest level of security standards. All data are encrypted before
+                            transmission using a Secured Layer for establishing an encrypted connection </p>
+                        <a href="#" class="cta ml-auto">Learn more</a>
                     </div>
                     <div class="col-12 col-md-4 card">
                         <img src="./assets/img/card-sheild.svg" alt="">
                         <h3>CARD SECURITY</h3>
-                        <p>We work with a PCI-DSS compliant payment processor for the security of your data, therefore all card details entered on corpreneur are protected, safe and secured.</p>
-                        <a href="#" class="cta">Learn more</a>
+                        <p>We work with a PCI-DSS compliant payment processor for the security of your data, therefore
+                            all card details entered on corpreneur are protected, safe and secured.</p>
+                        <a href="#" class="cta ml-auto">Learn more</a>
                     </div>
                     <div class="col-12 col-md-4 card">
                         <img src="./assets/img/piggy-sheild.svg" alt="">
                         <h3>FUNDS SECURITY</h3>
-                        <p>All funds are trusted with a public Trustee, duly registered with the Security and Exchange Commission. They monitor and ensure that all funds are securely invested.</p>
-                        <a href="#" class="cta">Learn more</a>
+                        <p>All funds are trusted with a public Trustee, duly registered with the Security and Exchange
+                            Commission. They monitor and ensure that all funds are securely invested.</p>
+                        <a href="#" class="cta ml-auto">Learn more</a>
                     </div>
                 </div>
             </div>
@@ -132,34 +140,42 @@
                     <div class="col-12 col-md-6 p-5 right">
                         <h2 class="mt-5 mb-5 text-center text-md-left">HOW IT <span>WORKS</span></h2>
                         <!-- <div class="row mt-5 mb-5 justify">
-                        </div> -->
+                                    </div> -->
                         <div class="row list">
                             <div class="list-item d-flex mt-3">
-                                <div class="li-img mr-3"><img class="img-fluid" src="./assets/img/reg-acc.svg" alt="" loading="lazy"></div>
+                                <div class="li-img mr-3"><img class="img-fluid" src="./assets/img/reg-acc.svg" alt=""
+                                        loading="lazy"></div>
                                 <div class="li-desc">
                                     <h3 class="font-weight-bold">REGISTER ACCOUNT</h3>
-                                    <p>Download the KoloMoni from Google Play Store , Apple Store or alternatively use our Web app to register a free KoloMoni account.</p>
+                                    <p>Download the KoloMoni from Google Play Store , Apple Store or alternatively use
+                                        our Web app to register a free KoloMoni account.</p>
                                 </div>
                             </div>
                             <div class="list-item d-flex mt-3">
-                                <div class="li-img mr-3"><img class="img-fluid" src="./assets/img/activate-acc.svg" alt=""></div>
+                                <div class="li-img mr-3"><img class="img-fluid" src="./assets/img/activate-acc.svg"
+                                        alt=""></div>
                                 <div class="li-desc">
                                     <h3 class="font-weight-bold">ACIVATE ACCOUNT</h3>
-                                    <p>Download the KoloMoni from Google Play Store , Apple Store or alternatively use our Web app to register a free KoloMoni account.</p>
+                                    <p>Download the KoloMoni from Google Play Store , Apple Store or alternatively use
+                                        our Web app to register a free KoloMoni account.</p>
                                 </div>
                             </div>
                             <div class="list-item d-flex mt-3">
-                                <div class="li-img mr-3"><img class="img-fluid" src="./assets/img/create-plan.svg" alt=""></div>
+                                <div class="li-img mr-3"><img class="img-fluid" src="./assets/img/create-plan.svg"
+                                        alt=""></div>
                                 <div class="li-desc">
                                     <h3 class="font-weight-bold">CREATE PLAN</h3>
-                                    <p>Download the KoloMoni from Google Play Store , Apple Store or alternatively use our Web app to register a free KoloMoni account.</p>
+                                    <p>Download the KoloMoni from Google Play Store , Apple Store or alternatively use
+                                        our Web app to register a free KoloMoni account.</p>
                                 </div>
                             </div>
                             <div class="list-item d-flex mt-3">
-                                <div class="li-img mr-3"><img class="img-fluid" src="./assets/img/start-saving.svg" alt=""></div>
+                                <div class="li-img mr-3"><img class="img-fluid" src="./assets/img/start-saving.svg"
+                                        alt=""></div>
                                 <div class="li-desc">
                                     <h3 class="font-weight-bold">START SAVING</h3>
-                                    <p>Download the KoloMoni from Google Play Store , Apple Store or alternatively use our Web app to register a free KoloMoni account.</p>
+                                    <p>Download the KoloMoni from Google Play Store , Apple Store or alternatively use
+                                        our Web app to register a free KoloMoni account.</p>
                                 </div>
                             </div>
                         </div>
@@ -170,73 +186,81 @@
         <!-- how it works end -->
 
         <!-- what we offer -->
-            <section id="what-we-offer" class="container-fluid p-5 d-flex align-items-center snap-start">
-                <div class="container">
-                    <div class="row justify-content-center mb-5"><h2 class="font-weight-bold text-black text-center">WHAT WE <span class="text-orange">OFFER</span></h2></div>
-                    <div class="row justify-content-center">
-                        <div class="card col-12 col-md-3 col-lg-4 p-5 text-black">
-                            <div class="title d-flex align-items-center mb-5 bg-orane">
-                                <img class="mr-3 d-block" src="./assets/img/grid.svg" alt="">
-                                <h3 class="font-weight-bold">My KoloMoni</h3>
-                            </div>
-                            <div class="desc mb-5">
-                                <p>Save money into you kolomoni for a minimum period of 3 months. Enjoy 12% interest per annum on this product. </p>
-                            </div>
-                            <span class="cta">
-                                <a href="#">Get Started</a>
-                            </span>
+        <section id="what-we-offer" class="container-fluid p-5 d-flex align-items-center snap-start">
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <h2 class="font-weight-bold text-black text-center">WHAT WE <span class="text-orange">OFFER</span>
+                    </h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="card col-12 col-md-3 col-lg-4 p-5 text-black">
+                        <div class="title d-flex align-items-center mb-5 bg-orane">
+                            <img class="mr-3 d-block" src="./assets/img/grid.svg" alt="">
+                            <h3 class="font-weight-bold">My KoloMoni</h3>
                         </div>
-                        <div class="card col-12 col-md-3 col-lg-4 p-5 text-black ml-0 mr-0 ml-md-5 mr-md-5">
-                            <div class="title d-flex align-items-center mb-5 bg-orane">
-                                <img class="mr-3 d-block" src="./assets/img/grid.svg" alt="">
-                                <h3 class="font-weight-bold">My KopaMoni</h3>
-                            </div>
-                            <div class="desc mb-5">
-                                <p>Save money into you kolomoni for a minimum period of 3 months. Enjoy 12% interest per annum on this product. </p>
-                            </div>
-                            <span class="cta">
-                                <a href="#">Get Started</a>
-                            </span>
+                        <div class="desc mb-5">
+                            <p>Save money into you kolomoni for a minimum period of 3 months. Enjoy 12% interest per
+                                annum on this product. </p>
                         </div>
-                        <div class="card col-12 col-md-3 col-lg-4 p-5 text-black">
-                            <div class="title d-flex align-items-center mb-5 bg-orane">
-                                <img class="mr-3 d-block" src="./assets/img/grid.svg" alt="">
-                                <h3 class="font-weight-bold">Target Saving</h3>
-                            </div>
-                            <div class="desc mb-5">
-                                <p>Create a personal savings target for your rents, car, education,vacation, etc. or for unforeseen circumstances. Earn up to 10% p.a</p>
-                            </div>
-                            <span class="cta">
-                                <a href="#">Get Started</a>
-                            </span>
+                        <span class="cta">
+                            <a href="#">Get Started</a>
+                        </span>
+                    </div>
+                    <div class="card col-12 col-md-3 col-lg-4 p-5 text-black ml-0 mr-0 ml-md-5 mr-md-5">
+                        <div class="title d-flex align-items-center mb-5 bg-orane">
+                            <img class="mr-3 d-block" src="./assets/img/grid.svg" alt="">
+                            <h3 class="font-weight-bold">My KopaMoni</h3>
                         </div>
-                        <div class="card col-12 col-md-3 col-lg-4 p-5 text-black ml-0 mr-0 ml-md-5 mr-md-5">
-                            <div class="title d-flex align-items-center mb-5 bg-orane">
-                                <img class="mr-3 d-block" src="./assets/img/grid.svg" alt="">
-                                <h3 class="font-weight-bold">Fixed Investment</h3>
-                            </div>
-                            <div class="desc mb-5">
-                                <p>Investment plan made for a minimum of 3 months. The account attracts higher interest rate (15% per annum)</p>
-                            </div>
-                            <span class="cta">
-                                <a href="#">Get Started</a>
-                            </span>
+                        <div class="desc mb-5">
+                            <p>Save money into you kolomoni for a minimum period of 3 months. Enjoy 12% interest per
+                                annum on this product. </p>
                         </div>
-                        <div class="card col-12 col-md-3 col-lg-4 p-5 text-black">
-                            <div class="title d-flex align-items-center mb-5 bg-orane">
-                                <img class="mr-3 d-block" src="./assets/img/grid.svg" alt="">
-                                <h3 class="font-weight-bold">Group Savings</h3>
-                            </div>
-                            <div class="desc mb-5">
-                                <p>Investment plan made for a minimum of 3 months. The account attracts higher interest rate (15% per annum)</p>
-                            </div>
-                            <span class="cta">
-                                <a href="#">Get Started</a>
-                            </span>
+                        <span class="cta">
+                            <a href="#">Get Started</a>
+                        </span>
+                    </div>
+                    <div class="card col-12 col-md-3 col-lg-4 p-5 text-black">
+                        <div class="title d-flex align-items-center mb-5 bg-orane">
+                            <img class="mr-3 d-block" src="./assets/img/grid.svg" alt="">
+                            <h3 class="font-weight-bold">Target Saving</h3>
                         </div>
+                        <div class="desc mb-5">
+                            <p>Create a personal savings target for your rents, car, education,vacation, etc. or for
+                                unforeseen circumstances. Earn up to 10% p.a</p>
+                        </div>
+                        <span class="cta">
+                            <a href="#">Get Started</a>
+                        </span>
+                    </div>
+                    <div class="card col-12 col-md-3 col-lg-4 p-5 text-black ml-0 mr-0 ml-md-5 mr-md-5">
+                        <div class="title d-flex align-items-center mb-5 bg-orane">
+                            <img class="mr-3 d-block" src="./assets/img/grid.svg" alt="">
+                            <h3 class="font-weight-bold">Fixed Investment</h3>
+                        </div>
+                        <div class="desc mb-5">
+                            <p>Investment plan made for a minimum of 3 months. The account attracts higher interest rate
+                                (15% per annum)</p>
+                        </div>
+                        <span class="cta">
+                            <a href="#">Get Started</a>
+                        </span>
+                    </div>
+                    <div class="card col-12 col-md-3 col-lg-4 p-5 text-black">
+                        <div class="title d-flex align-items-center mb-5 bg-orane">
+                            <img class="mr-3 d-block" src="./assets/img/grid.svg" alt="">
+                            <h3 class="font-weight-bold">Group Savings</h3>
+                        </div>
+                        <div class="desc mb-5">
+                            <p>Investment plan made for a minimum of 3 months. The account attracts higher interest rate
+                                (15% per annum)</p>
+                        </div>
+                        <span class="cta">
+                            <a href="#">Get Started</a>
+                        </span>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
         <!-- what we offer end -->
 
         <!-- footer -->
@@ -244,14 +268,19 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-4 d-flex align-items-center justify-content-center p-2">
-                        <p class="text-white text-center text-lg-left p-3 p-lg-3" style="font-size: 1.4rem;">Kolomoni is a product of CreditAssist Investment Limited. Registered under the Corporate Affairs Commission with RC: 1507157.<br> All savings on KoloMoni are insured by Nigeria Security & Exchange Commission (SEC) </p>
+                        <p class="text-white text-center text-lg-left p-3 p-lg-3" style="font-size: 1.4rem;">Kolomoni is
+                            a product of CreditAssist Investment Limited. Registered under the Corporate Affairs
+                            Commission with RC: 1507157.<br> All savings on KoloMoni are insured by Nigeria Security &
+                            Exchange Commission (SEC) </p>
                     </div>
                     <div class="col-12 col-lg-4 p-3 mt-3 mt-lg-0 mb-3 mb-lg-0">
-                        <h3 class="text-white mb-5 text-center" style="font-size: 3rem; font-weight: bold;">CONTACT US</h3>
+                        <h3 class="text-white mb-5 text-center" style="font-size: 3rem; font-weight: bold;">CONTACT US
+                        </h3>
                         <div class="row flex-column">
                             <div class="list-item d-flex">
                                 <img src="./assets/img/home.svg" alt="home" style="margin-right: 20px;">
-                                <p class="text-white">1st floor Tambourine House, adjacent Ventura mall, Sango Ibadan</p>
+                                <p class="text-white">1st floor Tambourine House, adjacent Ventura mall, Sango Ibadan
+                                </p>
                             </div>
                             <div class="list-item d-flex  mt-3 mb-3">
                                 <img src="./assets/img/phone.svg" alt="home" style="margin-right: 20px;">
@@ -274,10 +303,12 @@
                 </div>
             </div>
         </section>
-        <div class="copyright text-white p-3 d-flex align-items-center justify-content-center" style="background-color: #001048;">
+        <div class="copyright text-white p-3 d-flex align-items-center justify-content-center"
+            style="background-color: #001048;">
             <p>© Copyright Kolomoni. All Rights Reserved </p>
         </div>
         <!-- footer end -->
+
     </main>
 
 
@@ -287,6 +318,12 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"
         integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw=="
         crossorigin="anonymous"></script> -->
+
+    <script>
+        $('body').scrollspy({
+            target: '#nav'
+        })
+    </script>
 </body>
 
 </html>

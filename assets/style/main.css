@@ -10,12 +10,15 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding: 10vh;
 }
 
 body {
   font-size: 1.5rem;
   font-family: 'Raleway', sans-serif;
   background-color: #FAFAF9;
+  position: relative;
 }
 
 .bg-blue {
@@ -77,6 +80,7 @@ body {
 .navbar .navbar-toggler {
   z-index: 5;
   border: none;
+  font-size: 1.7rem;
 }
 
 .navbar .logo {
@@ -108,12 +112,22 @@ body {
   margin-left: auto;
 }
 
+@media screen and (max-width: 500px) {
+  .navbar .navbar-nav a {
+    margin-left: 0 !important;
+  }
+}
+
 .navbar .navbar-nav .nav-link {
   color: #FAFAF9;
+  display: block;
+  height: 100%;
 }
 
 .navbar .navbar-nav .active {
-  color: #FF7A00;
+  color: #FF7A00 !important;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .navbar .navbar-nav .cta {
