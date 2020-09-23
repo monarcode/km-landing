@@ -113,6 +113,9 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+  .navbar .navbar-nav {
+    font-size: 1.5rem;
+  }
   .navbar .navbar-nav a {
     margin-left: 0 !important;
   }
@@ -120,8 +123,6 @@ body {
 
 .navbar .navbar-nav .nav-link {
   color: #FAFAF9;
-  display: block;
-  height: 100%;
 }
 
 .navbar .navbar-nav .active {

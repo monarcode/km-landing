@@ -71,7 +71,6 @@ body {
 .navbar {
     min-height: 10vh;
     width: 100%;
-    // display: flex;
     align-items: center;
     flex-grow: 1;    
     position: fixed;
@@ -87,10 +86,6 @@ body {
         z-index: 5;
         border: none;
         font-size: 1.7rem;
-
-        // .navbar-toggler-icon {
-        //     border: ;
-        // }
     }
 
     .logo {
@@ -116,6 +111,8 @@ body {
         }
 
         @media screen and (max-width: 500px){
+            font-size: 1.5rem;
+
             a {
                 margin-left: 0 !important;
             }
@@ -123,8 +120,6 @@ body {
 
         .nav-link {
             color: $white;
-            display: block;
-            height: 100%;
         }
 
         .active {
