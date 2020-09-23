@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css"
-        integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w=="
-        crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/d55238ab54.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/style/main.css">
     <title>KoloMoni NG</title>
 </head>
@@ -15,13 +14,13 @@
 <body>
     <main data-spy="scroll" data-target="#nav" data-offset="0">
         <!-- navbar -->
-        <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-blue text-white">
+        <nav id="nav" class="navbar navbar-expand-md navbar-dark bg-blue text-white">
             <div class="container">
                 <a class="navbar-brand" href="#"><img class="logo" src="./assets/img/kolo-white.svg">KoloMoni</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
                     aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    <!-- <img src="/assets/img/menu.svg" alt="ham" /> -->
+                    <i class="fas fa-bars big text-orange"></i>
+                    <!-- <img src="./assets/img/menu.svg" alt=""> -->
                 </button>
                 <div class="collapse navbar-collapse" id="navbar-links">
                     <div class="navbar-nav mb-2 mb-lg-0">
@@ -63,11 +62,12 @@
         <section id="about-us" class="container-fluid p-5 d-flex align-items-center snap-start">
             <div class="container h-100">
                 <div class="row h-100 justify-content-center align-items-center">
-                    <div class="col-12 col-md-6 left">
+                    <div class="col-12 col-md-6 left wow animate__fadeInUp">
                         <img src="./assets/img/abt-us-illust.svg" class="img-fluid" alt="abt-us" loading="lazy">
                     </div>
                     <div class="col-12 col-md-6 right">
-                        <h2 class="text-center text-lg-left mt-3 mt-md-0">ABOUT <span>US</span></h2>
+                        <h2 class="text-center text-lg-left mt-3 mt-md-0"">
+                            ABOUT <span>US</span></h2>
                         <p class="text-center text-lg-left">Remember that savings box or piggy bank you had as a child?
                             We made it into an app! This app is designed to help users achieve their goals through
                             SAVINGS (not every time borrowborrow, sometimes your own money). At KoloMoni,we're a team of
@@ -315,9 +315,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"
-        integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw=="
-        crossorigin="anonymous"></script> -->
 
     <script>
         $('body').scrollspy({
