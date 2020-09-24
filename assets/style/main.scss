@@ -76,13 +76,14 @@ body {
 }
 
 .no-scroll {
-    overflow: hidden;
+    overflow-y: hidden;
+    scroll-behavior: inherit;
 }
 
 // page loader
 .loader-wrapper {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
     background: $white;
     position: absolute;
     top: 0;
@@ -90,7 +91,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 99999;
+    z-index: 999;
     overflow: hidden;
 }
 
@@ -102,13 +103,16 @@ body {
     border: 4px solid $primary;
     animation: loader 2s infinite ease;
     border-radius: 20px;
+    z-index: 10;
+    overflow: hidden;
 }
 
 .loader-inner {
     vertical-align: top;
     display: inline-block;
     width: 100%;
-    background-color: $primary;
+    background-color: $secondary;
+    z-index: 9;
     // border-radius: 20px;
     animation: loader-inner 2s infinite ease-in;
 }
@@ -153,7 +157,7 @@ body {
         margin-left: auto;
         align-items: center;
         font-size: 1.2rem;
-        gap: 1.2rem;
+        margin: 1.2rem 0;
 
         a:nth-of-type(1) {
             margin-left: auto;
@@ -200,6 +204,13 @@ body {
                     color: #FF7A00;
                 }
             }
+        }
+    }
+
+    @supports (gap: 1.2rem){
+        .navbar-nav {
+            gap: 1.2rem;
+            margin: 0;
         }
     }
 }
@@ -664,5 +675,6 @@ body {
     100% {
         opacity: 0;
         visibility: hidden;
+        display: none;
     }
 }
