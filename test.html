@@ -12,47 +12,36 @@
             box-sizing: border-box;
         }
 
-        h1 {
-            font-size: 50px;
+        html {
+            width: 100vw;
         }
 
-        .section {
-            display: grid;
-            place-items: center;
-        }
-
-        .s1 {
+        .cont {
+            position: relative;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
             background-color: red;
         }
-        .s2 {
-            background-color: green;
+
+        .cont .img-1 {
+            position: absolute;
+            z-index: 1;
+            width: 200px;
         }
-        .s3 {
-            background-color: blue;
+
+        .cont .img-2 {
+            position: absolute;
+            z-index: 2;
         }
     </style>
 </head>
 <body>
-    <main id="fullpage">
-        <div class="section s1">
-            <h1>Section 1</h1>
-        </div>
-        <div class="section s2">
-            <h1>Section 2</h1>
-        </div>
-        <div class="section s3">
-            <h1>Section 3</h1>
-        </div>
-    </main>
-
-    
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js" integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw==" crossorigin="anonymous"></script>
-    <script>
-        new fullpage('#fullpage', {
-            autoScrolling: true
-        })
-    </script>
+    <div class="cont">
+        <img class="img-1" src="./rot.png" alt="">
+        <img class="img-2" src="./new-rot.svg" alt="">
+    </div>
 </body>
 </html>

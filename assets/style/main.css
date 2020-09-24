@@ -26,13 +26,13 @@ body {
 }
 
 .floater {
-  -webkit-animation: float 2s infinite alternate;
-          animation: float 2s infinite alternate;
+  -webkit-animation: float 2s infinite alternate linear;
+          animation: float 2s infinite alternate linear;
 }
 
 .arrow {
-  -webkit-animation: arrow 2s infinite alternate ease-in-out;
-          animation: arrow 2s infinite alternate ease-in-out;
+  -webkit-animation: arrow 2s infinite alternate linear;
+          animation: arrow 2s infinite alternate linear;
 }
 
 .bg-blue {
@@ -317,11 +317,10 @@ body {
 
 #about-us .right .store-links .apple {
   background-color: #111;
-  padding: 1rem 2rem;
+  padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -344,6 +343,7 @@ body {
 
 #about-us .right .store-links .apple img {
   display: block;
+  margin-right: 10px;
 }
 
 #about-us .right .store-links .google {
@@ -352,7 +352,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -374,6 +373,7 @@ body {
 
 #about-us .right .store-links .google img {
   display: block;
+  margin-right: 10px;
 }
 
 @supports (gap: 20px) {
@@ -510,8 +510,8 @@ body {
 }
 
 #what-we-offer .card {
-  background-color: rgba(255, 123, 0, 0.089);
-  border: none;
+  background-color: transparent;
+  border: 1px solid rgba(255, 123, 0, 0.103);
   border-radius: 20px 20px 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
