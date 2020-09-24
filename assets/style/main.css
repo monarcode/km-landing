@@ -12,7 +12,6 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
   scroll-padding: 10vh;
-  overflow-x: hidden;
 }
 
 body {
@@ -25,6 +24,10 @@ body {
 
 .overflow-visible {
   overflow: visible;
+}
+
+.overflow-x {
+  overflow-x: hidden;
 }
 
 .floater {
@@ -67,61 +70,6 @@ body {
 
 .top {
   scroll-snap-align: start;
-}
-
-.no-scroll {
-  overflow-y: hidden;
-  scroll-behavior: inherit;
-}
-
-.loader-wrapper {
-  width: 100%;
-  min-height: 100vh;
-  background: #FAFAF9;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  z-index: 999;
-  overflow: hidden;
-}
-
-.loader {
-  display: inline-block;
-  width: 30px;
-  height: 60px;
-  position: relative;
-  border: 4px solid #FF7A00;
-  -webkit-animation: loader 2s infinite ease;
-          animation: loader 2s infinite ease;
-  border-radius: 20px;
-  z-index: 10;
-  overflow: hidden;
-}
-
-.loader-inner {
-  vertical-align: top;
-  display: inline-block;
-  width: 100%;
-  background-color: #001E89;
-  z-index: 9;
-  -webkit-animation: loader-inner 2s infinite ease-in;
-          animation: loader-inner 2s infinite ease-in;
-}
-
-.hide {
-  -webkit-animation: fadeOut 1s;
-          animation: fadeOut 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 
 .navbar {

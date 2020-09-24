@@ -20,7 +20,6 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
     scroll-padding: 10vh;
-    overflow-x: hidden;
 }
 
 body {
@@ -33,6 +32,10 @@ body {
 
 .overflow-visible {
     overflow: visible;
+}
+
+.overflow-x {
+    overflow-x: hidden;
 }
 
 .floater {
@@ -74,54 +77,6 @@ body {
 .top {
     scroll-snap-align: start;
 }
-
-.no-scroll {
-    overflow-y: hidden;
-    scroll-behavior: inherit;
-}
-
-// page loader
-.loader-wrapper {
-    width: 100%;
-    min-height: 100vh;
-    background: $white;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-    overflow: hidden;
-}
-
-.loader {
-    display: inline-block;
-    width: 30px;
-    height: 60px;
-    position: relative;
-    border: 4px solid $primary;
-    animation: loader 2s infinite ease;
-    border-radius: 20px;
-    z-index: 10;
-    overflow: hidden;
-}
-
-.loader-inner {
-    vertical-align: top;
-    display: inline-block;
-    width: 100%;
-    background-color: $secondary;
-    z-index: 9;
-    // border-radius: 20px;
-    animation: loader-inner 2s infinite ease-in;
-}
-
-.hide {
-    animation: fadeOut 1s;
-    animation-fill-mode: forwards;
-}
-// page loader end
 
 // navbar
 .navbar {
