@@ -222,7 +222,6 @@ body {
     }
 
     .header-img {
-        // background-color: red;
         margin: 2rem 3rem;
         max-width: 500px;
         // max-height: 100%;
@@ -246,9 +245,8 @@ body {
            max-width: 100%;
 
            rect#phone-img {
-            //    transform: translateY(-50px);
-               animation: float 2s infinite ease-in alternate;
-               transform-origin: bottom;
+               animation: float 2s infinite ease-in-out alternate;
+               transform-origin: center;
                transform-box: fill-box;
            }
         }
@@ -560,15 +558,12 @@ body {
 @keyframes float {
     0% {
         transform: translateY(0);
-        transform-origin: bottom;
     }
     50% {
-        transform: translateY(-10px);
-        transform-origin: bottom;
+        transform: translateY(-15px);
     }
     100% {
         transform: translateY(0);
-        transform-origin: bottom;
     }
 }
 

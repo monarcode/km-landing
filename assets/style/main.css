@@ -258,10 +258,10 @@ body {
 }
 
 #hero .header-img svg rect#phone-img {
-  -webkit-animation: float 2s infinite ease-in alternate;
-          animation: float 2s infinite ease-in alternate;
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
+  -webkit-animation: float 2s infinite ease-in-out alternate;
+          animation: float 2s infinite ease-in-out alternate;
+  -webkit-transform-origin: center;
+          transform-origin: center;
   transform-box: fill-box;
 }
 
@@ -595,20 +595,14 @@ body {
   0% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    -webkit-transform-origin: bottom;
-            transform-origin: bottom;
   }
   50% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-    -webkit-transform-origin: bottom;
-            transform-origin: bottom;
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
   }
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    -webkit-transform-origin: bottom;
-            transform-origin: bottom;
   }
 }
 
@@ -616,20 +610,14 @@ body {
   0% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    -webkit-transform-origin: bottom;
-            transform-origin: bottom;
   }
   50% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-    -webkit-transform-origin: bottom;
-            transform-origin: bottom;
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
   }
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    -webkit-transform-origin: bottom;
-            transform-origin: bottom;
   }
 }
 
