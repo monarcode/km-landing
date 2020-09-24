@@ -28,6 +28,15 @@ body {
     background-color: $white;
     position: relative;
     overflow-x: hidden;
+    height: 100%;
+}
+
+.mouse {
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    height: 50px;
 }
 
 .overflow-visible {
@@ -184,6 +193,7 @@ body {
         justify-content: center;
         max-height: 100%;
         position: relative;
+        gap: 50px;
     }
 
     .header-text {
@@ -266,14 +276,6 @@ body {
                transform-box: fill-box;
            }
         }
-    }
-
-    .mouse {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        height: 50px;
     }
 }
 

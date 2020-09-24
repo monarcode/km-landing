@@ -20,6 +20,16 @@ body {
   background-color: #FAFAF9;
   position: relative;
   overflow-x: hidden;
+  height: 100%;
+}
+
+.mouse {
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 50px;
 }
 
 .overflow-visible {
@@ -196,6 +206,7 @@ body {
           justify-content: center;
   max-height: 100%;
   position: relative;
+  gap: 50px;
 }
 
 #hero .header-text h2 {
@@ -284,15 +295,6 @@ body {
   -webkit-transform-origin: center;
           transform-origin: center;
   transform-box: fill-box;
-}
-
-#hero .mouse {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  height: 50px;
 }
 
 #about-us {
