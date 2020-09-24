@@ -1,0 +1,33 @@
+<svg width="567" height="716" viewBox="0 0 567 716" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="new-rot">
+<g id="shadow" filter="url(#filter0_f)">
+<ellipse cx="255" cy="621.5" rx="175" ry="14.5" fill="#040404"/>
+</g>
+<g id="vectors-group">
+<g id="balls">
+<circle id="orange-ball" cx="417.794" cy="175.53" r="68.2084" fill="url(#paint0_linear)"/>
+<circle id="blue-ball" cx="241.361" cy="334.683" r="227.361" fill="url(#paint1_radial)"/>
+</g>
+<g id="lines">
+<path id="dark-line" d="M421.023 141.334L517.418 28.2934" stroke="#404040" stroke-width="1.13585" stroke-miterlimit="10"/>
+<path id="orange-line" d="M470.604 115.401L467.836 113.041L564.233 0L567 2.35976L470.604 115.401Z" fill="#FF7A00"/>
+<path id="blue-line" d="M424.252 206.402L417.794 200.894L514.19 87.8524L520.648 93.3601L424.252 206.402Z" fill="#0130DC"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_f" x="0" y="527" width="510" height="189" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="40" result="effect1_foregroundBlur"/>
+</filter>
+<linearGradient id="paint0_linear" x1="380.052" y1="107.322" x2="455.536" y2="266.02" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF7A00"/>
+<stop offset="1" stop-color="#FFB800"/>
+</linearGradient>
+<radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(164.527 398.736) rotate(-19.4801) scale(296.12)">
+<stop stop-color="#001664"/>
+<stop offset="1" stop-color="#0030DC"/>
+</radialGradient>
+</defs>
+</svg>

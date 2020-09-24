@@ -188,12 +188,14 @@ body {
 }
 
 #hero .inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-height: 100%;
+  position: relative;
 }
 
 #hero .header-text h2 {
@@ -235,22 +237,41 @@ body {
 
 #hero .header-img {
   margin: 2rem 3rem;
-  max-width: 500px;
-  position: relative !important;
+  max-width: 50rem;
+  max-height: 100%;
   overflow: visible;
+  position: relative;
 }
 
-#hero .header-img bg {
-  position: absolute;
+#hero .header-img .bg {
+  position: relative;
   top: 5px;
   left: 0;
-  z-index: -1;
+  z-index: 2;
+  width: 50rem;
 }
 
-#hero .header-img phone {
+@media screen and (max-width: 500px) {
+  #hero .header-img .bg {
+    width: 30rem;
+  }
+}
+
+#hero .header-img .ph {
   position: absolute;
   top: 0;
+  left: 50px;
   z-index: 5;
+  width: 23rem;
+  -webkit-animation: float 2s infinite ease-in-out alternate;
+          animation: float 2s infinite ease-in-out alternate;
+}
+
+@media screen and (max-width: 500px) {
+  #hero .header-img .ph {
+    width: 15rem;
+    left: 30px;
+  }
 }
 
 #hero .header-img svg {
@@ -593,31 +614,31 @@ body {
 
 @-webkit-keyframes float {
   0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
   }
   50% {
     -webkit-transform: translateY(-15px);
             transform: translateY(-15px);
   }
   100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
   }
 }
 
 @keyframes float {
   0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
   }
   50% {
     -webkit-transform: translateY(-15px);
             transform: translateY(-15px);
   }
   100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
   }
 }
 
