@@ -271,12 +271,41 @@ body {
            max-width: 100%;
 
            rect#phone-img {
-               animation: float 2s infinite ease-in-out alternate;
+               animation: float 5s infinite ease-in-out alternate;
                transform-origin: center;
                transform-box: fill-box;
            }
         }
     }
+}
+
+#lower-leaf {
+    animation: lower-leaf 2s ease infinite alternate;
+    transform-origin: 0 0;
+    transform-box: fill-box;
+}
+
+#leaf-2 {
+    animation: leaf-2 3s ease-out infinite alternate;
+    transform-box: fill-box;
+    transform-origin: bottom left;
+}
+
+#leaf-3 {
+    animation: leaf-3 3.2s ease-in-out infinite alternate;
+    transform-box: fill-box;
+    transform-origin: top right;
+}
+
+#hand {
+    animation: hand 2s linear infinite alternate;
+    transform-origin: bottom left;
+    transform-box: fill-box;
+}
+#head {
+    animation: head 1s linear infinite alternate;
+    transform-origin: bottom right;
+    transform-box: fill-box;
 }
 
 #about-us {
@@ -644,5 +673,57 @@ body {
         opacity: 0;
         visibility: hidden;
         display: none;
+    }
+}
+
+
+// illustration-animations
+@keyframes lower-leaf {
+    0% {
+        transform: rotate(0deg) rotateX(0deg);
+    }
+
+    100% {
+        transform: rotate(20deg) rotateX(20deg);
+    }
+}
+@keyframes leaf-2 {
+    0% {
+        transform: rotate(0deg) rotateX(0deg);
+    }
+
+    100% {
+        transform: rotate(20deg) rotateX(20deg);
+    }
+}
+@keyframes leaf-3 {
+    0% {
+        transform: rotate(0deg) rotateX(0deg);
+    }
+
+    100% {
+        transform: rotate(20deg) rotateX(20deg);
+    }
+}
+@keyframes hand {
+    0% {
+        transform: rotate(3deg) rotateY(2deg);
+    }
+    50% {
+        transform: rotate(0deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotate(-3deg) rotateY(-2deg);
+    }
+}
+@keyframes head {
+    0% {
+        transform: rotate(3deg) rotateY(2deg);
+    }
+    50% {
+        transform: rotate(0deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotate(-3deg) rotateY(-2deg);
     }
 }
