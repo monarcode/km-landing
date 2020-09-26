@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
 *,
 *::after,
 *::before {
@@ -16,7 +16,7 @@ html {
 
 body {
   font-size: 1.5rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #FAFAF9;
   position: relative;
   overflow-x: hidden;
@@ -97,6 +97,12 @@ body {
   padding: 2.4rem 1rem;
 }
 
+@media screen and (max-width: 500px) {
+  .navbar {
+    padding: 2.6rem 1.1rem;
+  }
+}
+
 .navbar .navbar-brand {
   color: #FAFAF9;
   font-size: 1.4rem;
@@ -148,6 +154,12 @@ body {
 
 .navbar .navbar-nav .nav-link {
   color: #FAFAF9;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar .navbar-nav .nav-link {
+    margin: 1rem 0;
+  }
 }
 
 .navbar .navbar-nav .active {
@@ -298,8 +310,8 @@ body {
 }
 
 #lower-leaf {
-  -webkit-animation: lower-leaf 2s ease infinite alternate;
-          animation: lower-leaf 2s ease infinite alternate;
+  -webkit-animation: lower-leaf 2s ease-in-out infinite alternate;
+          animation: lower-leaf 2s ease-in-out infinite alternate;
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
   transform-box: fill-box;
@@ -319,6 +331,54 @@ body {
   transform-box: fill-box;
   -webkit-transform-origin: top right;
           transform-origin: top right;
+}
+
+#leaf-4 {
+  -webkit-animation: leaf-3 1.5s ease-in-out infinite alternate;
+          animation: leaf-3 1.5s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+#leaf-5 {
+  -webkit-animation: leaf-5 2s ease-out infinite alternate;
+          animation: leaf-5 2s ease-out infinite alternate;
+  transform-box: fill-box;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+#hand-ipad {
+  -webkit-animation: hand-ipad 2s ease-in-out infinite alternate;
+          animation: hand-ipad 2s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+#blue-man-head {
+  -webkit-animation: blue-man-head 1.3s linear infinite alternate;
+          animation: blue-man-head 1.3s linear infinite alternate;
+  transform-box: fill-box;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+#woman-hand {
+  -webkit-animation: woman-hand 1.3s linear infinite alternate;
+          animation: woman-hand 1.3s linear infinite alternate;
+  transform-box: fill-box;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+#hand-coffee {
+  -webkit-animation: hand-coffee 1.6s ease infinite alternate;
+          animation: hand-coffee 1.6s ease infinite alternate;
+  transform-box: fill-box;
+  -webkit-transform-origin: left;
+          transform-origin: left;
 }
 
 #hand {
@@ -870,6 +930,28 @@ body {
   }
 }
 
+@-webkit-keyframes leaf-5 {
+  0% {
+    -webkit-transform: rotate(10deg) rotateY(30deg);
+            transform: rotate(10deg) rotateY(30deg);
+  }
+  100% {
+    -webkit-transform: rotate(-20deg) rotateY(20deg);
+            transform: rotate(-20deg) rotateY(20deg);
+  }
+}
+
+@keyframes leaf-5 {
+  0% {
+    -webkit-transform: rotate(10deg) rotateY(30deg);
+            transform: rotate(10deg) rotateY(30deg);
+  }
+  100% {
+    -webkit-transform: rotate(-20deg) rotateY(20deg);
+            transform: rotate(-20deg) rotateY(20deg);
+  }
+}
+
 @-webkit-keyframes hand {
   0% {
     -webkit-transform: rotate(3deg) rotateY(2deg);
@@ -927,6 +1009,94 @@ body {
   100% {
     -webkit-transform: rotate(-3deg) rotateY(-2deg);
             transform: rotate(-3deg) rotateY(-2deg);
+  }
+}
+
+@-webkit-keyframes hand-ipad {
+  0% {
+    -webkit-transform: rotateX(20deg);
+            transform: rotateX(20deg);
+  }
+  100% {
+    -webkit-transform: rotateX(-20deg);
+            transform: rotateX(-20deg);
+  }
+}
+
+@keyframes hand-ipad {
+  0% {
+    -webkit-transform: rotateX(20deg);
+            transform: rotateX(20deg);
+  }
+  100% {
+    -webkit-transform: rotateX(-20deg);
+            transform: rotateX(-20deg);
+  }
+}
+
+@-webkit-keyframes blue-man-head {
+  0% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+}
+
+@keyframes blue-man-head {
+  0% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+}
+
+@-webkit-keyframes woman-hand {
+  0% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+}
+
+@keyframes woman-hand {
+  0% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+}
+
+@-webkit-keyframes hand-coffee {
+  0% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+  100% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+}
+
+@keyframes hand-coffee {
+  0% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+  100% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
   }
 }
 /*# sourceMappingURL=main.css.map */
